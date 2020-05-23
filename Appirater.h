@@ -188,6 +188,12 @@ extern NSString *const kAppiraterReminderRequestDate;
 + (void)resetDaysCounter;
 
 /*!
+ Record the fact that user rated the app, so the
+ user won't be prompted again to rate the app.
+ */
++ (void)didRateApp;
+
+/*!
  Asks Appirater if the user has declined to rate;
 */
 - (BOOL)userHasDeclinedToRate;

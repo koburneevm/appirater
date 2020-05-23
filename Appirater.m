@@ -799,4 +799,10 @@ static BOOL _alwaysUseMainBundle = NO;
     [userDefaults synchronize];
 }
 
++ (void)didRateApp {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:YES forKey:kAppiraterRatedCurrentVersion];
+    [userDefaults synchronize];
+}
+
 @end
