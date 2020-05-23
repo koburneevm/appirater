@@ -792,4 +792,11 @@ static BOOL _alwaysUseMainBundle = NO;
 	}
 }
 
++ (void)resetDaysCounter {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSince1970];
+    [userDefaults setDouble:timeInterval forKey:kAppiraterFirstUseDate];
+    [userDefaults synchronize];
+}
+
 @end

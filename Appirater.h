@@ -183,6 +183,11 @@ extern NSString *const kAppiraterReminderRequestDate;
 + (void)closeModal;
 
 /*!
+ Tells Appirater to forget how much days app was used.
+*/
++ (void)resetDaysCounter;
+
+/*!
  Asks Appirater if the user has declined to rate;
 */
 - (BOOL)userHasDeclinedToRate;
